@@ -14,7 +14,7 @@ public class Talleres extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_talleres);
-
+        getSupportActionBar().hide();
         btnLogin = findViewById(R.id.button);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
