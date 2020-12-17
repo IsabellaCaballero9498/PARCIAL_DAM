@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        ImageButton btnLogin,btnLogin2;
+        ImageButton btnLogin,btnLogin2, btnLogin3;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
@@ -32,6 +32,15 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, Talleres.class);
+                startActivity(i);
+            }
+        });
+
+        btnLogin = findViewById(R.id.imageButton2);
+        btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, Reglamentos.class);
                 startActivity(i);
             }
         });
